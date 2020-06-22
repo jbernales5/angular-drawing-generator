@@ -4,15 +4,18 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { CanvasWhiteboardModule } from 'ng2-canvas-whiteboard';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CanvasWhiteboardModule
   ],
-  providers: [],
+  providers: [CanvasWhiteboardModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
